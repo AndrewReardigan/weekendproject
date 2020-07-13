@@ -1,0 +1,340 @@
+/* C38 VIBEEEE ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* C38 VIBEEEE ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* C38 VIBEEEE ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* C38 VIBEEEE ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* C38 VIBEEEE ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+body {
+  font-family: "Source Serif Pro", serif;
+  margin: auto;
+  background-color: #1b1e25;
+}
+
+/* All sections - Total of 6 */
+section {
+  height: 800px;
+  width: 1200px;
+  margin: auto;
+}
+
+/* All paragraphs inside all section */
+section p {
+  font-size: 20px;
+}
+
+/* ~~~~~Used for background-color~~~~~~~~~~~~~
+~~~Each individual Section~ class=page-1,2,3,4,5,6 */
+
+#page-1 {
+  background-color: #1b1e25;
+  color: white;
+}
+#page-2 {
+  background-color: #fff;
+  color: black;
+}
+#page-3 {
+  background-color: #fafafa;
+  color: black;
+}
+#page-4 {
+  background-color: #1b1e25;
+  color: white;
+}
+#page-5 {
+  background-color: #48bbae;
+  color: white;
+}
+#page-6 {
+  background-color: #1b1e25;
+  color: white;
+}
+
+/* flex-container~~~~~~*/
+.flex-container {
+  display: flex;
+  text-align: center;
+}
+/* arrow tab center screen - top */
+.half-circle {
+  width: 80px;
+  height: 40px;
+
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+
+  border-bottom: 0;
+  font-size: 30px;
+}
+/*LOVE HATE */
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: yellow;
+}
+
+/* Page 1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*LOGO PAGE 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* general */
+body {
+  background: #f5f6f7;
+}
+li {
+  list-style: none;
+}
+/* layout & positioning */
+.logo-container,
+.circle,
+.cross:before,
+.cross:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/* the cross - the main part of the logo */
+
+li {
+  list-style: none;
+}
+
+.cross::before,
+.cross::after {
+  background: #bdc3c7;
+  width: 198px;
+  height: 1px;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.cross::before {
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+}
+.cross::after {
+  -webkit-transform: translateX(-50%) rotate(-45deg);
+  transform: translateX(-50%) rotate(-45deg);
+}
+/* general styles for the characters in our logo */
+.characters {
+  position: absolute;
+  font: normal normal 400 18pt/1 "Times New Roman", Times, serif;
+
+  text-align: center;
+}
+/*
+.icon {
+  color: #e74c3c;
+  text-shadow: 0 1px 0 #333;
+}
+*/
+
+/* helper classes for quadrant orientation */
+.landscape {
+  width: 140px;
+  height: 70px;
+  line-height: 70px;
+}
+.portrait {
+  width: 70px;
+  height: 140px;
+  line-height: 140px;
+}
+
+/* quadrants*/
+#t-q {
+  top: -70px;
+  left: -70px;
+}
+#b-q {
+  top: 0px;
+  left: -70px;
+}
+#l-q {
+  top: -70px;
+  left: -70px;
+}
+#r-q {
+  top: -70px;
+  left: 0px;
+}
+
+/* Page one Divs ~~~~~~~~~~~*/
+.flex-item-1 {
+  display: flex;
+}
+
+.top-right {
+  padding: 8px 20px;
+  border: 1px solid white;
+  font-size: small;
+  font: white;
+  margin: 15px 15px;
+}
+
+/* Page 2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#page-2 .flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#page-2 .content {
+  display: flex;
+}
+#page-2 .content .flex-item {
+  display: flex;
+  flex: 1;
+
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px;
+}
+#page-2 .half-circle {
+  background-color: #1b1e25;
+  color: #fff;
+}
+
+/* Page 3~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#page-3 .flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#page-3 .content {
+  display: flex;
+}
+
+#page-3 .content .flex-item {
+  align-self: center;
+
+  flex: 1;
+  padding: 30px 30px;
+}
+
+#page-3 .half-circle {
+  background-color: #fff;
+  color: #1a1d24;
+}
+
+/* Page 4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#page-4 .flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#page-4 .content {
+  display: grid;
+  height: 600px;
+  padding: 0 190px;
+}
+
+#page-4 .content .flex-item {
+  border: 1px solid #fff;
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 25px;
+  height: 250px;
+}
+
+#page-4 .half-circle {
+  background-color: #fafafa;
+  color: black;
+}
+
+/* Page 5 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#page-5 .flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#page-5 .content {
+  display: flex;
+  justify-content: space-around;
+}
+
+#page-5 .content .flex-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#page-5 .half-circle {
+  background-color: #1b1e25;
+  color: white;
+}
+
+#page-5 li {
+  padding: 1rem;
+  font-size: 20px;
+}
+/*Page 6 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#page-6 .flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#page-6 .half-circle {
+  background-color: #48bbae;
+  color: white;
+}
+#page-6 h1 {
+  font-size: 35px;
+}
+.form input,
+textarea,
+label {
+  background-color: #1b1e25;
+  color: #fff;
+  display: block;
+  padding: 1rem;
+}
+#page-6 input {
+  border: none;
+  border-bottom: solid 1px #fff;
+  text-transform: uppercase;
+  width: 500px;
+}
+#page-6 input,
+label,
+textarea {
+  display: block;
+}
+#page-6 textarea {
+  border: solid 1px #fff;
+}
+#page-6 label {
+  text-align: left;
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  margin: auto;
+}
